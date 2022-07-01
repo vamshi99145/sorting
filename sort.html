@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORT VISUALIZER</title>
+    <link rel="shortcut icon" href="2.jpg">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="sort.html">ALGORITHMS</a>
+                </li>
+              
+             
+          </div>
+        </div>
+      </nav>
+      
+
+
+
+
+
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>Size of array:</p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+                <p>Speed of algorithm:</p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                <button id="a_generate">Generate New Array!</button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting visualizer</p>
+
+                <div class="algos">
+                    <button >Bubble</button>
+                    <button >Selection</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                    <button >Heap</button>
+                    <!-- <button style="margin-right: 0px;">Heap</button> -->
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+
+        <div id="Info_Cont1">
+            <p></p>
+        </div>
+
+        <div id="array_container">
+
+        </div>
+
+        <div id="Info_Cont2">
+
+            <p></p>
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+
+
+
+</html>
